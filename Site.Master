@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="BibliotecaMVC.Site" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Biblioteca</title>
+
+    <!-- Meta para diseño responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Enlace al archivo CSS -->
+    <link href="Content/estilos.css" rel="stylesheet" />
+
+    <!-- Contenido extra que agreguen las páginas -->
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+
+<body>
+
+    <form id="form1" runat="server">
+
+        <!-- Menú de navegación -->
+        <nav>
+            <asp:HyperLink ID="linkRegistrar" runat="server" NavigateUrl="~/Registrar.aspx">
+            Registrar Libro
+            </asp:HyperLink>
+
+            |
+
+        <asp:HyperLink ID="linkConsultar" runat="server" NavigateUrl="~/Consultar.aspx">
+            Consultar Libros
+        </asp:HyperLink>
+        </nav>
+
+        <hr />
+
+        <!-- Aquí se cargará el contenido de cada página -->
+        <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+
+    </form>
+
+</body>
+</html>
