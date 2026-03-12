@@ -4,38 +4,43 @@
 <html>
 <head runat="server">
     <title>Biblioteca</title>
-
-    <!-- Meta para diseño responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Enlace al archivo CSS -->
-    <link href="Content/estilos.css" rel="stylesheet" />
+    <link href="Estilos/estilos.css" rel="stylesheet" />
 
-    <!-- Contenido extra que agreguen las páginas -->
+    <script src="JavaScripts/Script.js"></script>
+
     <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
 </head>
-
 <body>
 
     <form id="form1" runat="server">
 
+        <!-- ENCABEZADO -->
+        <header>
+            <h1>Biblioteca Virtual</h1>
+        </header>
+
         <!-- Menú de navegación -->
         <nav>
-            <asp:HyperLink ID="linkRegistrar" runat="server" NavigateUrl="~/Registrar.aspx">
+            <asp:HyperLink runat="server" NavigateUrl="~/Views/Libro/Create.aspx">
             Registrar Libro
             </asp:HyperLink>
 
-            |
-
-        <asp:HyperLink ID="linkConsultar" runat="server" NavigateUrl="~/Consultar.aspx">
+            <asp:HyperLink runat="server" NavigateUrl="~/Views/Libro/Index.aspx">
             Consultar Libros
-        </asp:HyperLink>
+            </asp:HyperLink>
         </nav>
 
         <hr />
 
         <!-- Aquí se cargará el contenido de cada página -->
         <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+
+        <!-- PIE DE PÁGINA -->
+        <footer>
+            <p>Biblioteca Virtual - Parcial 2</p>
+        </footer>
 
     </form>
 
