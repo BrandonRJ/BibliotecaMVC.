@@ -7,11 +7,11 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace BibliotecaMVC.Views
+namespace BibliotecaMVC.Views.Libros
 {
 
 
-    public partial class Detalle
+    public partial class Consultar
     {
 
         /// <summary>
