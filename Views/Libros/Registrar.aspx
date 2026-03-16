@@ -29,7 +29,7 @@
     </div>
     <div style="margin-top: 20px;">
         <asp:Button ID="btnGuardar" runat="server" Text="Guardar Libro" CssClass="btn btn-primary" OnClick="btnGuardar_Click" />
-        <asp:HyperLink ID="btnCancelar" runat="server" NavigateUrl="~/Views/Consultar.aspx" Text="Cancelar" CssClass="btn btn-secondary" Style="margin-left: 10px;" />
+        <asp:HyperLink ID="btnCancelar" runat="server" NavigateUrl="~/Views/Libros/Consultar.aspx" Text="Cancelar" CssClass="btn btn-secondary" Style="margin-left: 10px;" />
     </div>
     <div style="margin-top: 10px;">
         <asp:Label ID="lblMensaje" runat="server" Text="" CssClass="text-success"></asp:Label>
