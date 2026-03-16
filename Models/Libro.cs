@@ -18,5 +18,7 @@ namespace BibliotecaMVC.Models
 
         // Campo opcional para el nombre del autor
         public string Autor { get; set; }
+        // Campo para la fecha
+        public DateTime FechaPublicacion { get; set; }
     }
 }
